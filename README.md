@@ -14,20 +14,20 @@ La branche main servira lors de nos diverses livraisons.
 
 -------------------------------------------------------
 ## Rappel commandes Git principales
-# Création d’une branche:
+## Création d’une branche:
 $git branch name
-# Montrer les branches:
+## Montrer les branches:
 $git branch
-# Changer de branche:
+## Changer de branche:
 $git checkout name
-# Ajouter une modification sur la branche:
+## Ajouter une modification sur la branche:
 $git add
 $git commit 
-# Fusionner les branches:
+## Fusionner les branches:
 Retourner sur branch Master
 Fusionner branch name avec branch Master
 $git merge name
-# Effacer la branche:
+## Effacer la branche:
 $git branch -d name
 
 
