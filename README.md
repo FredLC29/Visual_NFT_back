@@ -1,16 +1,52 @@
 # Visual_NFT
+
 App blockchain to view NFT
 
-cloner le repo avec git bash : 
+-----------
 
-frlec@LAPTOP-I4IM5CCV MINGW64 /c/git/Visual_NFT
-$ git clone https://github.com/FredLC29/Visual_NFT.git .
+## Cloner le repo avec git bash : 
+  $ git clone https://github.com/FredLC29/Visual_NFT.git .
 
-Se placer sur la branche de dev :
-frlec@LAPTOP-I4IM5CCV MINGW64 /c/git/Visual_NFT (main)
-$ git checkout develop
+## Se placer sur la branche de dev :
+  $ git checkout develop
 
-La branche main servira lors de nos diverses livraisons.
+## Se créer une branche feature local :
+  $ git checkout -b feat-<name> develop
+  
+## travailler localement sur sa branche local :
+  $ git status
+  
+  $ git add <some-file>
+  
+  $ git commit
+
+## Faire un rebase avant de pousher sa feature :
+  $ git checkout develop
+  
+  $ git pull --rebase origin develop
+  
+  $ git rebase develop feat-<name>
+  
+## Livrer sa feature sur le repo develop
+  $ git checkout develop
+  
+  $ git pull --rebase origin develop
+  
+  $ git merge --no-ff feat-<name>
+  
+  $ git push origin develop
+  
+## Résoudre les conflits
+  Lors du rebase, on peut avoir des conflits qui seront indiquées dans le fichier, les lignes seront mises en evidence avec la version actuelle et la version concurrente. Il faut donc remettre manuellement le bon code.
+  
+  refaire ensuite :
+  
+  $ git add <fichier>
+  
+  $ git rebase --continue
+  
+
+  La branche main servira lors de nos diverses livraisons.
 
 -------------------------------------------------------
 ## Rappel commandes Git principales
