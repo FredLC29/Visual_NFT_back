@@ -13,6 +13,11 @@ contract EasterEggNFT is ERC721URIStorage {
         _mint(player, tokenId);
     }
     
+    function burn(uint tokenId) public {
+        require(_msgSender() == ERC721.ownerOf(tokenId));
+        _burn(tokenId);
+    }
+    
     /**
      * @dev Base URI for computing {tokenURI}.
      */
